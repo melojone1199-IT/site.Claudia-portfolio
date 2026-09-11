@@ -1,0 +1,218 @@
+/* Reset básico e tipografia */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #b5b8be;
+    color: #2b2d42;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header principal */
+.hero-header {
+    background-color: #041263;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 15px;
+}
+
+.hero-header h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.hero-header h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #a0aec0;
+}
+
+/* Container do Layout Principal */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 95%;
+    flex-grow: 1;
+}
+
+/* Sidebar Esquerda */
+.sidebar {
+    width: 28%;
+    background-color: #0a010f;
+    border-right: 1px solid #e5e7eb;
+    padding: 25px 20px;
+}
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #07077c;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 20px;
+    color: #f6f7fc;
+}
+
+.sidebar-section {
+    margin: 15px 0;
+}
+
+.sidebar-section h4 {
+    font-size: 15px;
+    color: #d9dade;
+    margin-bottom: 6px;
+}
+
+.sidebar-section p {
+    font-size: 13px;
+    color: #c7ccd3;
+    line-height: 1.5;
+}
+
+.sidebar-section ul {
+    list-style-type: disc;
+    padding-left: 18px;
+}
+
+.sidebar-section li {
+    font-size: 13px;
+    color: #b7babe;
+    margin-bottom: 4px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 15px 0;
+}
+
+.sidebar-link {
+    display: inline-block;
+    color: #4f46e5;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sidebar-link:hover {
+    text-decoration: underline;
+}
+
+/* Área de Conteúdo Direita */
+.content {
+    width: 72%;
+    padding: 30px;
+}
+
+.content-block {
+    margin-bottom: 25px;
+}
+
+.content-block h3 {
+    font-size: 18px;
+    color: #1a1e36;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 4px;
+}
+
+.content-block p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+/* Tabela de Habilidades */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.skills-table th, 
+.skills-table td {
+    border: 1px solid #d1d5db;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.skills-table th {
+    background-color: #f3f4f6;
+    color: #1a1e36;
+    font-weight: bold;
+}
+
+.skills-table td {
+    color: #4b5563;
+}
+
+/* Layout de Duas Colunas (Formação e Experiência) */
+.two-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.two-columns .content-block {
+    flex: 1;
+}
+
+/* Caixas com marcador lateral (Cards) */
+.card-box {
+    border-left: 4px solid #4f46e5;
+    background-color: #f9fafb;
+    padding: 10px 14px;
+    margin-top: 8px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 13px;
+    color: #1a1e36;
+}
+
+.card-sub {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 3px;
+}
+
+.card-sub a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.card-sub a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e5e7eb;
+    color: #6b7280;
+    font-size: 12px;
+    margin-top: auto;
+}
